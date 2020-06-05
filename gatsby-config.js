@@ -3,7 +3,7 @@ module.exports = {
     title: `カイザーブログ`,
     author: {
       name: `Keyser Hoge`,
-      summary: `音楽が大好きなフロントエンドエンジニア`,
+      summary: `ギターが大好きなフロントエンドエンジニア`,
     },
     description: `初学者でもわかりやすく重要なプログラミングの情報を発信します。`,
     siteUrl: `https://twitter.com/KeyserH`,
