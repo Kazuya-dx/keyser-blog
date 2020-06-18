@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import "./layout.scss"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -10,6 +11,7 @@ const Layout = ({ location, title, children }) => {
   if (location.pathname === rootPath) {
     header = (
       <h1
+        className="toppage-h1"
         style={{
           ...scale(1.5),
           marginBottom: rhythm(1.5),

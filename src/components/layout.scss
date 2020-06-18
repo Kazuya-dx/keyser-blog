@@ -1,0 +1,8 @@
+.toppage-h1 {
+  color: rgb(226, 182, 87);
+  transition: color 0.5s;
+
+  &:hover {
+    color: rgb(64, 169, 243);
+  }
+}
