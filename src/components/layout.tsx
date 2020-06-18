@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import "./layout.scss"
+import "./layout.module.scss"
 
 import { rhythm, scale } from "../utils/typography"
 

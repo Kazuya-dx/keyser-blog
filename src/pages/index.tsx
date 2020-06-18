@@ -5,7 +5,9 @@ import { PageProps, Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Tags from "../components/tags"
 import { rhythm } from "../utils/typography"
+import "../styles.scss"
 
 type Data = {
   site: {
@@ -21,6 +23,7 @@ type Data = {
           title: string
           date: string
           description: string
+          tags: string
         }
         fields: {
           slug: string
@@ -52,6 +55,11 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                   {title}
                 </Link>
               </h3>
+              {node.frontmatter.tags ? (
+                <Tags tags={node.frontmatter.tags} />
+              ) : (
+                <></>
+              )}
               <small>{node.frontmatter.date}</small>
             </header>
             <section>
@@ -88,6 +96,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
           }
         }
       }

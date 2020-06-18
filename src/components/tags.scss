@@ -1,0 +1,14 @@
+.tag-ul {
+  display: flex;
+  margin: 0;
+  list-style: none;
+
+  .tag-li {
+    margin: 0 5px;
+    padding: 0 5px;
+    background-color: rgb(94, 121, 22);
+    font-size: 13px;
+    color: #fff;
+    border-radius: 0.25em;
+  }
+}
