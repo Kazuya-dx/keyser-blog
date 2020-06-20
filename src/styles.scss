@@ -1,0 +1,18 @@
+.index-title {
+  width: 20%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #555;
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .index-title {
+    width: 10%;
+    font-size: 25px;
+  }
+}

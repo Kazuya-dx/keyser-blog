@@ -41,6 +41,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
+      <h2 className="index-title">Maps</h2>
       <Chart
         title="JavaScript"
         subtitle="JavaScript 攻略マップ"
@@ -53,6 +54,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
         summary="Reactの基礎から応用まで体系的に学べるようにまとめています。初学者でもわかりやすいように説明しています。"
         imgurl="/webapp-img.jpg"
       />
+      <h2 className="index-title">Posts</h2>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
