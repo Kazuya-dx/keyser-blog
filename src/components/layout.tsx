@@ -10,14 +10,7 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <h1
-        className="toppage-h1"
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
+      <h1 className="toppage-h1">
         <Link
           style={{
             boxShadow: `none`,
@@ -50,16 +43,11 @@ const Layout = ({ location, title, children }) => {
     )
   }
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-      }}
-    >
-      <header>{header}</header>
-      <main>{children}</main>
+    <div className="wrapper">
+      <header className="home-intro">{header}</header>
+      <main>
+        <div className="contents">{children}</div>
+      </main>
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
