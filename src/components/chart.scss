@@ -1,0 +1,43 @@
+.chart-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+
+  .chart-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    color: #ffffffd0;
+    font-family: fantasy;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  }
+
+  .chart-text-block {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0 3%;
+    letter-spacing: 0.15rem;
+
+    .title {
+      margin-top: -0.4rem;
+      margin-bottom: 0.4em;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    .summary {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #808085;
+    }
+  }
+}

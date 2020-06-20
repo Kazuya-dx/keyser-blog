@@ -6,6 +6,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tags from "../components/tags"
+import Chart from "../components/chart"
 import { rhythm } from "../utils/typography"
 import "../styles.scss"
 
@@ -40,6 +41,18 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
+      <Chart
+        title="JavaScript"
+        subtitle="JavaScript 攻略マップ"
+        summary="JavaScriptの基礎から応用まで体系的に学べるようにまとめています。初学者でもわかりやすいように説明しています。"
+        imgurl="/javascript-img.jpg"
+      />
+      <Chart
+        title="WebApp"
+        subtitle="Webアプリ 攻略マップ"
+        summary="Reactの基礎から応用まで体系的に学べるようにまとめています。初学者でもわかりやすいように説明しています。"
+        imgurl="/webapp-img.jpg"
+      />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
