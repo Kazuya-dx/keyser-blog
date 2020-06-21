@@ -3,11 +3,19 @@
   margin: 0;
   list-style: none;
 
-  .tag-li {
-    margin: 0 5px;
-    padding: 0 5px;
-    font-size: 12px;
-    border-radius: 0.25em;
-    border: 0;
+  a {
+    box-shadow: none;
+
+    .tag-li {
+      font-size: 11px;
+      padding-right: 0.2em;
+      color: #808085;
+      box-shadow: none;
+    }
+  }
+  .tag-space {
+    font-size: 11px;
+    padding-right: 0.2em;
+    color: #808085;
   }
 }

@@ -67,12 +67,12 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                     {title}
                   </Link>
                 </h1>
+                <small className="posts-date">{node.frontmatter.date}</small>
                 {node.frontmatter.tags ? (
                   <Tags tags={node.frontmatter.tags} />
                 ) : (
                   <></>
                 )}
-                <small>{node.frontmatter.date}</small>
               </header>
             </article>
           )

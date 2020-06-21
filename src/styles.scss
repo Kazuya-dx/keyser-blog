@@ -29,9 +29,18 @@
         background-color: #abc;
       }
       .posts-title {
-        margin: 10px 0;
-        font-size: 12px;
-        line-height: 1.2rem;
+        margin: 5px 0 15px;
+        line-height: 0.1em;
+
+        a {
+          font-size: 12px;
+          font-weight: 600;
+          color: #000000;
+        }
+      }
+      .posts-date {
+        color: #808085;
+        font-size: 11px;
       }
     }
   }
