@@ -55,38 +55,29 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
         imgurl="/webapp-img.jpg"
       />
       <h2 className="index-title">Posts</h2>
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginTop: rhythm(1 / 4),
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              {node.frontmatter.tags ? (
-                <Tags tags={node.frontmatter.tags} />
-              ) : (
-                <></>
-              )}
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
+      <div className="posts-wrap">
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <article key={node.fields.slug} className="posts-article">
+              <header className="posts-header">
+                <figure className="posts-img"></figure>
+                <h1 className="posts-title">
+                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h1>
+                {node.frontmatter.tags ? (
+                  <Tags tags={node.frontmatter.tags} />
+                ) : (
+                  <></>
+                )}
+                <small>{node.frontmatter.date}</small>
+              </header>
+            </article>
+          )
+        })}
+      </div>
       <Bio />
     </Layout>
   )
