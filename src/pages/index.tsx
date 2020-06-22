@@ -46,13 +46,13 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       <Chart
         title="JavaScript"
         subtitle="JavaScript 攻略マップ"
-        summary="JavaScriptの基礎から応用まで体系的に学べるようにまとめています。初学者でもわかりやすいように説明しています。"
+        summary="JavaScriptの基礎から応用まで体系的に学べるようにまとめていきます。初学者でもわかりやすいように説明しているのでオススメです。"
         imgurl="/javascript-img.jpg"
       />
       <Chart
-        title="WebApp"
-        subtitle="Webアプリ 攻略マップ"
-        summary="Reactの基礎から応用まで体系的に学べるようにまとめています。初学者でもわかりやすいように説明しています。"
+        title="Network"
+        subtitle="ネットワーク(TCP/IP) 攻略マップ"
+        summary="エンジニアなら知らないと恥ずかしいネットワーク(TCP/IP)の知識を体系的にまとめています。"
         imgurl="/webapp-img.jpg"
       />
       <h2 className="index-title">Posts</h2>
