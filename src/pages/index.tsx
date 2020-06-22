@@ -1,13 +1,13 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tags from "../components/tags"
 import Chart from "../components/chart"
-import { rhythm } from "../utils/typography"
 import "../styles.scss"
 
 type Data = {
@@ -25,6 +25,7 @@ type Data = {
           date: string
           description: string
           tags: string
+          cover: any
         }
         fields: {
           slug: string
@@ -61,7 +62,13 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           return (
             <article key={node.fields.slug} className="posts-article">
               <header className="posts-header">
-                <figure className="posts-img"></figure>
+                <figure className="posts-img">
+                  <Img
+                    fluid={node.frontmatter.cover.childImageSharp.fluid}
+                    alt={node.frontmatter.title}
+                    imgStyle={{ objectFit: "contain" }}
+                  />
+                </figure>
                 <h1 className="posts-title">
                   <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                     {title}
@@ -100,10 +107,17 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY年MM月DD日")
             title
             description
             tags
+            cover {
+              childImageSharp {
+                fluid(maxWidth: 1000, maxHeight: 650, quality: 90) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
           }
         }
       }
