@@ -10,7 +10,7 @@ const Tag = ({ tag, tags, index }) => (
     </li>
 
     {tags.length > 1 && index !== tags.length - 1 ? (
-      <div className="tag-space">/</div>
+      <li className="tag-space">/</li>
     ) : (
       <></>
     )}
