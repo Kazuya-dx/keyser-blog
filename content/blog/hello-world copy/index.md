@@ -2,7 +2,7 @@
 title: テスト投稿です
 date: "2020-05-01T22:12:03.284Z"
 description: "Hello World"
-cover: "./image.jpg"
+cover: "./pc-image-mini.jpg"
 ---
 
 This is my first post on my new fake blog! How exciting!
@@ -20,4 +20,4 @@ Oh, and here's a great quote from this Wikipedia on
 > salted duck eggs have a briny aroma, a gelatin-like egg white and a
 > firm-textured, round yolk that is bright orange-red in color.
 
-![Chinese Salty Egg](./image.jpg)
+![Chinese Salty Egg](./pc-image.jpg)

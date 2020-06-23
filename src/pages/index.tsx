@@ -41,7 +41,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="カイザーブログ 初学者を卒業するための技術ブログ" />
       <h2 className="index-title">Maps</h2>
       <Chart
         title="JavaScript"
@@ -114,7 +114,7 @@ export const pageQuery = graphql`
             cover {
               childImageSharp {
                 fluid(maxWidth: 1000, maxHeight: 650, quality: 90) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

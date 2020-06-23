@@ -3,7 +3,7 @@ title: TCP/IPとは何か
 date: "2020-06-22T17:50:03.284Z"
 description: "TCP/IPとは何か"
 tags: ["TCP/IP"]
-cover: "./image.jpg"
+cover: "./network-mini.jpg"
 ---
 
 こんにちは、カイザーです。
@@ -19,4 +19,4 @@ TCP/IP の重要な特徴は以下の 4 つです。
 
 4. パケット交換方式で通信
 
-![Chinese Salty Egg](./image.jpg)
+![Chinese Salty Egg](./network.jpg)
