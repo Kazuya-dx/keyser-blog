@@ -2,6 +2,7 @@
 title: TCP/IPとは何か
 date: "2020-06-22T17:50:03.284Z"
 description: "TCP/IPとは何か"
+tags: ["TCP/IP"]
 cover: "./image.jpg"
 ---
 
