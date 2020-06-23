@@ -66,7 +66,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                   <Img
                     fluid={node.frontmatter.cover.childImageSharp.fluid}
                     alt={node.frontmatter.title}
-                    imgStyle={{ objectFit: "contain" }}
                   />
                 </figure>
                 <h1 className="posts-title">
