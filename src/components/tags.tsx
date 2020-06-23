@@ -5,9 +5,10 @@ import "./tags.scss"
 
 const Tag = ({ tag, tags, index }) => (
   <>
-    <Link to={`/tags/${kebabCase(tag)}/`}>
-      <li className="tag-li">{tag}</li>
-    </Link>
+    <li className="tag-li">
+      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+    </li>
+
     {tags.length > 1 && index !== tags.length - 1 ? (
       <div className="tag-space">/</div>
     ) : (
