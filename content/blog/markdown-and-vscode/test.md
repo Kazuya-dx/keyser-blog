@@ -50,7 +50,6 @@ depthTo=6 => h6タグ 目次の見出し
 ## 2. Markdown All in One
 
 [Markdown All in One 公式ドキュメント](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-Markdownで必要な キーボードショートカット・自動プレビュー・目次追加機能を提供します。
 
 ### 便利なショートカットキーを提供
 
