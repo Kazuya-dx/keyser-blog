@@ -71,7 +71,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:image`,
-          content: `/images/icon.jpg`,
+          content: `https://happy-carson-24f160.netlify.app/twitcard/icon.jpg`,
         },
       ].concat(meta)}
     />
