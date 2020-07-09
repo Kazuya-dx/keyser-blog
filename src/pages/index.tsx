@@ -43,18 +43,53 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="カイザーブログ 初学者を卒業するための技術ブログ" />
       <h2 className="index-title">Maps</h2>
-      <Chart
-        title="JavaScript"
-        subtitle="JavaScript 攻略マップ(作成予定)"
-        summary="JavaScriptの基礎から応用まで体系的に学べるようにまとめていきます。"
-        imgurl="/javascript-img.jpg"
-      />
-      <Chart
-        title="Network"
-        subtitle="ネットワーク(TCP/IP) 攻略マップ(作成予定)"
-        summary="エンジニアなら知らないと恥ずかしいネットワーク(TCP/IP)の知識を体系的にまとめていきます。"
-        imgurl="/webapp-img.jpg"
-      />
+      <div className="maps-wrap">
+        <article className="maps-article">
+          <header className="maps-header">
+            <figure className="maps-img">
+              <Chart title="JavaScript" imgurl="/javascript-img.jpg" />
+            </figure>
+            <h1 className="maps-title">
+              <a style={{ boxShadow: `none` }}>
+                【準備中】JavaScript 攻略マップ
+              </a>
+            </h1>
+            <small className="maps-date">
+              JavaScriptの基礎から応用まで体系的に学べるようにまとめていきます。
+            </small>
+          </header>
+        </article>
+        <article className="maps-article">
+          <header className="maps-header">
+            <figure className="maps-img">
+              <Chart title="Network" imgurl="/webapp-img.jpg" />
+            </figure>
+            <h1 className="maps-title">
+              <a style={{ boxShadow: `none` }}>
+                【準備中】ネットワーク(TCP/IP) 攻略マップ
+              </a>
+            </h1>
+            <small className="maps-date">
+              エンジニアなら知らないと恥ずかしいネットワーク(TCP/IP)の知識を体系的にまとめていきます。
+            </small>
+          </header>
+        </article>
+        <article className="maps-article">
+          <header className="maps-header">
+            <figure className="maps-img">
+              <Chart title="Hardware" imgurl="/hardware-img.jpg" />
+            </figure>
+            <h1 className="maps-title">
+              <a style={{ boxShadow: `none` }}>
+                【準備中】ハードウェア 攻略マップ
+              </a>
+            </h1>
+            <small className="maps-date">
+              エンジニアとして働く上で最低限知っておきたいハードウェアの知識を体系的にまとめていきます。
+            </small>
+          </header>
+        </article>
+      </div>
       <h2 className="index-title">Posts</h2>
       <div className="posts-wrap">
         {posts.map(({ node }) => {
