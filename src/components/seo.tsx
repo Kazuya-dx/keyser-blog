@@ -71,7 +71,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:image`,
-          content: `../images/header-img.jpg`,
+          content: `/images/icon.jpg`,
         },
       ].concat(meta)}
     />
@@ -79,7 +79,7 @@ const SEO = ({ description, lang, meta, title }) => {
 }
 
 SEO.defaultProps = {
-  lang: `ja`,
+  lang: `en`,
   meta: [],
   description: ``,
 }
