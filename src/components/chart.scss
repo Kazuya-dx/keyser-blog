@@ -19,27 +19,6 @@
     font-weight: bold;
     letter-spacing: 0.1rem;
   }
-
-  .chart-text-block {
-    width: 100%;
-    margin-top: 1rem;
-    padding: 0 3%;
-    letter-spacing: 0.15rem;
-
-    .title {
-      margin-top: -0.4rem;
-      margin-bottom: 0.4em;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.6;
-    }
-
-    .summary {
-      font-size: 12px;
-      font-weight: 300;
-      line-height: 1.5;
-    }
-  }
 }
 
 @media screen and (min-width: 1024px) {

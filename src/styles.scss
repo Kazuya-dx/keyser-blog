@@ -61,14 +61,18 @@
 
       .posts-img {
         margin: 0;
-        height: 50%;
+        height: 45%;
+
+        img {
+          margin: 0;
+        }
       }
       .posts-title {
-        margin: 10px 0 15px;
-        line-height: 0.1em;
+        margin: 0;
+        line-height: 0.2em;
 
         a {
-          font-size: 12px;
+          font-size: 0.01em;
           font-weight: 600;
           color: #000000;
         }
