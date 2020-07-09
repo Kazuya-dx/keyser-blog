@@ -41,7 +41,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="カイザーブログ 初学者を卒業するための技術ブログ" />
+      <SEO title="カイザーブログ 駆け出しエンジニアを卒業するための技術ブログ" />
       <h2 className="index-title">Maps</h2>
       <div className="maps-wrap">
         <article className="maps-article">
