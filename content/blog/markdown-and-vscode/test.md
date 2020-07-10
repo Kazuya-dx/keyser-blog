@@ -41,11 +41,10 @@ Markdown Preview Enhanced では目次を自動で生成してくれる機能が
 
 1. マークダウンファイルを開いた状態で、コマンドパレット（F1 または Ctrl + Shift + P）を開き、「Markdown Preview Enhanced: Create TOC」を実行します。
 
-2. `<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->`が生成されるので、目次を表示したい箇所にそのコードを記述します。
-depthFrom=1 => h1タグ 目次
-depthTo=6 => h6タグ 目次の見出し
+2. `<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->`が生成されるので、目次を表示したい箇所にそのコードを記述します
+(depthFrom=1 => h1タグは「目次」を表す。depthTo=6 => h6タグは「目次の見出し」)
 
-3. h1タグ、h6タグ(修正可能)を追加すれば自動で目次を生成します。また、目次に載せたくないグに関しては {ignore = true} を追加で可能です。`ex) ### HogeHoge {ignore=true}`
+3. h1タグ、h6タグ(修正可能)を追加すれば自動で目次を生成します。また、目次に載せたくないタグに関しては {ignore = true} を設定することで追加しないようにすることもできます。`ex) ### HogeHoge {ignore=true}`
 
 ## 2. Markdown All in One
 
