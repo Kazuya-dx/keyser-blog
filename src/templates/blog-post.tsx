@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tags from "../components/tags"
 import { rhythm, scale } from "../utils/typography"
+import "./blog-post.scss"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -39,7 +40,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.date}
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section
+          dangerouslySetInnerHTML={{ __html: post.html }}
+          className="article"
+        />
         <hr
           style={{
             marginBottom: rhythm(1),
