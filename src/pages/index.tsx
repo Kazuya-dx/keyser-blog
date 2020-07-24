@@ -41,7 +41,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="カイザーブログ 駆け出しエンジニアを卒業するための技術ブログ" />
+      <SEO title="カイザーブログ エンジニア向け情報ブログ" />
       <h2 className="index-title">Maps</h2>
       <div className="maps-wrap">
         <article className="maps-article">
@@ -50,9 +50,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
               <Chart title="JavaScript" imgurl="/javascript-img.jpg" />
             </figure>
             <h1 className="maps-title">
-              <a style={{ boxShadow: `none` }}>
-                【準備中】JavaScript 攻略マップ
-              </a>
+              <a style={{ boxShadow: `none` }}>【準備中】JavaScript まとめ</a>
             </h1>
             <small className="maps-date">
               JavaScriptの基礎から応用まで体系的に学べるようにまとめていきます。
@@ -66,7 +64,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
             </figure>
             <h1 className="maps-title">
               <a style={{ boxShadow: `none` }}>
-                【準備中】ネットワーク(TCP/IP) 攻略マップ
+                【準備中】ネットワーク(TCP/IP) まとめ
               </a>
             </h1>
             <small className="maps-date">
@@ -80,9 +78,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
               <Chart title="Hardware" imgurl="/hardware-img.jpg" />
             </figure>
             <h1 className="maps-title">
-              <a style={{ boxShadow: `none` }}>
-                【準備中】ハードウェア 攻略マップ
-              </a>
+              <a style={{ boxShadow: `none` }}>【準備中】ハードウェア まとめ</a>
             </h1>
             <small className="maps-date">
               エンジニアとして働く上で最低限知っておきたいハードウェアの知識を体系的にまとめていきます。
