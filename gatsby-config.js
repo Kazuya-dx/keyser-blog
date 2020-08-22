@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Keyser Blog`,
     author: {
-      name: `Keyser Hoge`,
-      summary: `ギターが大好きなフロントエンドエンジニア`,
+      name: `Kazu`,
+      summary: `腰痛持ちエンジニア`,
     },
     description: `初学者でもわかりやすく重要なプログラミングの情報を発信します。`,
     siteUrl: `https://twitter.com/KeyserH`,
