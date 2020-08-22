@@ -8,7 +8,7 @@ module.exports = {
     description: `初学者でもわかりやすく重要なプログラミングの情報を発信します。`,
     siteUrl: `https://twitter.com/KeyserH`,
     social: {
-      twitter: `KeyserH`,
+      twitter: `Kazu`,
     },
   },
   plugins: [
