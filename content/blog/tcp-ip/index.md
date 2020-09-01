@@ -9,7 +9,7 @@ cover: "./network-mini.jpg"
 こんにちは、カイザーです。
 ネットワークを学習する上で非常に重要である TCP/IP の基礎についてまとめていきます。
 
-#### 目次
+## 目次
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=false} -->
 

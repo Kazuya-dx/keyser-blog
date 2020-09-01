@@ -3,8 +3,18 @@
     .contents {
       .article {
         font-size: 15px;
-
+        /* 目次 */
         h2 {
+          margin: 0;
+          padding: 10px;
+          background-color: #333;
+          color: #eee;
+          font-size: 18px;
+          a {
+            box-shadow: none;
+          }
+        }
+        h3 {
           padding: 10px;
           color: #333;
           font-size: 20px;
@@ -13,7 +23,7 @@
             box-shadow: none;
           }
         }
-        h3 {
+        h4 {
           padding: 10px 0;
           font-size: 15px;
           border-bottom: 2px solid #999;
@@ -21,16 +31,7 @@
             box-shadow: none;
           }
         }
-        /* 目次 */
-        h4 {
-          margin: 0;
-          padding: 10px;
-          background-color: #333;
-          color: #eee;
-          a {
-            box-shadow: none;
-          }
-        }
+
         ul {
           margin: 0;
           padding: 15px;
@@ -40,6 +41,9 @@
             list-style: none;
             font-weight: bold;
             font-size: 15px;
+            a {
+              color: rgb(0, 75, 238);
+            }
 
             ul {
               margin-left: 20px;
@@ -66,7 +70,18 @@
     main {
       .contents {
         .article {
+          /* 目次 */
           h2 {
+            margin: 0;
+            padding: 10px;
+            background-color: #333;
+            color: #eee;
+            font-size: 18px;
+            a {
+              box-shadow: none;
+            }
+          }
+          h3 {
             padding: 10px 20px;
             color: #333;
             font-size: 24px;
@@ -76,21 +91,10 @@
             }
           }
 
-          h3 {
+          h4 {
             padding: 10px;
             font-size: 20px;
             border-bottom: 2px solid #999;
-            a {
-              box-shadow: none;
-            }
-          }
-
-          /* 目次 */
-          h4 {
-            margin: 0;
-            padding: 10px;
-            background-color: #333;
-            color: #eee;
             a {
               box-shadow: none;
             }

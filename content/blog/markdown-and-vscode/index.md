@@ -9,9 +9,9 @@ cover: "./markdown-and-vscode-mini.jpg"
 こんにちは、カイザーです。
 今回から Markdown 記法でブログを投稿することになったので、快適に作業できるように便利な拡張機能を３つ追加したので紹介します。
 
-#### 目次
+## 目次
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=false} -->
+<!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=4 orderedList=false} -->
 <!-- code_chunk_output -->
 
 - [1. Markdown Preview Enhanced](#1-markdown-preview-enhanced)
@@ -24,17 +24,17 @@ cover: "./markdown-and-vscode-mini.jpg"
 
 <!-- /code_chunk_output -->
 
-## 1. Markdown Preview Enhanced
+### 1. Markdown Preview Enhanced
 
 [Markdown Preview Enhanced 公式ドキュメント](https://shd101wyy.github.io/markdown-preview-enhanced/#/)
 
-### リアルタイムでプレビューを見ることが可能
+#### リアルタイムでプレビューを見ることが可能
 
 ![Markdown All in One](./markdown-all-in-one.gif)
 
 リアルタイムでプレビューを見ることでレイアウトを瞬時に確認することができます。Markdown 記法でのミスを減らす上では必須級の拡張機能です。
 
-### 目次の自動生成
+#### 目次の自動生成
 
 Markdown Preview Enhanced では目次を自動で生成してくれる機能が備わっています。
 
@@ -47,11 +47,11 @@ Markdown Preview Enhanced では目次を自動で生成してくれる機能が
 
 3. h1 タグ、h6 タグ(修正可能)を追加すれば自動で目次を生成します。また、目次に載せたくないタグに関しては {ignore = true} を設定することで追加しないようにすることもできます。`ex) ### HogeHoge {ignore=true}`
 
-## 2. Markdown All in One
+### 2. Markdown All in One
 
 [Markdown All in One 公式ドキュメント](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 
-### 便利なショートカットキーを提供
+#### 便利なショートカットキーを提供
 
 作業効率を高める為のショートカットキーを提供してくれます。
 以下ショートカットキーの一覧です。（公式ドキュメントからの引用)
@@ -80,11 +80,11 @@ Markdown Preview Enhanced では目次を自動で生成してくれる機能が
 **Ctrl / Cmd + KV**
 プレビューを横に切り替え
 
-## 3. markdownlint
+### 3. markdownlint
 
 [markdownlint 公式ドキュメント](https://github.com/DavidAnson/markdownlint)
 
-### 自動で構文チェック
+#### 自動で構文チェック
 
 markdown 記法に則って間違った記述を厳密に指摘してくれます。
 エンジニアにとって Linter は必需品です。ぜひ入れましょう。
