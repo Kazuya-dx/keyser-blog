@@ -4,16 +4,50 @@
       .article {
         h2 {
           padding: 10px;
-          background-color: #333;
-          color: white;
-          font-size: 24px;
+          color: #333;
+          font-size: 20px;
+          border-left: 3px solid #333;
           a {
             box-shadow: none;
           }
         }
         h3 {
+          padding: 10px;
+          font-size: 18px;
+          border-bottom: 2px solid #999;
           a {
             box-shadow: none;
+          }
+        }
+        /* 目次 */
+        h4 {
+          margin: 0;
+          padding: 10px;
+          background-color: #333;
+          color: #eee;
+          a {
+            box-shadow: none;
+          }
+        }
+        ul {
+          margin: 0;
+          padding: 15px;
+          background-color: #eee;
+
+          li {
+            list-style: none;
+            font-weight: bold;
+            font-size: 15px;
+
+            ul {
+              margin-left: 20px;
+              padding: 0;
+              li {
+                list-style: square;
+                font-weight: 400;
+                font-size: 13px;
+              }
+            }
           }
         }
       }
@@ -31,26 +65,51 @@
       .contents {
         .article {
           h2 {
-            padding: 10px;
-            background-color: #333;
-            color: white;
+            padding: 10px 20px;
+            color: #333;
             font-size: 24px;
+            border-left: 5px solid #333;
             a {
               box-shadow: none;
             }
           }
 
           h3 {
+            padding: 10px;
+            font-size: 20px;
+            border-bottom: 2px solid #999;
+            a {
+              box-shadow: none;
+            }
+          }
+
+          /* 目次 */
+          h4 {
+            margin: 0;
+            padding: 10px;
+            background-color: #333;
+            color: #eee;
             a {
               box-shadow: none;
             }
           }
 
           ul {
-            padding: 0 30px;
+            padding: 20px 30px 30px 30px;
+            background-color: #eee;
 
             li {
-              left: -35px;
+              list-style: none;
+              font-weight: bold;
+
+              ul {
+                padding: 0;
+                li {
+                  list-style: square;
+                  font-weight: 400;
+                  font-size: 15px;
+                }
+              }
             }
           }
 
