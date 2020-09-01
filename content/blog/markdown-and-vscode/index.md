@@ -7,9 +7,10 @@ cover: "./markdown-and-vscode-mini.jpg"
 ---
 
 こんにちは、カイザーです。
-今回からMarkdown記法でブログを投稿することになったので、快適に作業できるように便利な拡張機能を３つ追加したので紹介します。
+今回から Markdown 記法でブログを投稿することになったので、快適に作業できるように便利な拡張機能を３つ追加したので紹介します。
 
-## 目次
+#### 目次
+
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=false} -->
 <!-- code_chunk_output -->
 
@@ -31,7 +32,7 @@ cover: "./markdown-and-vscode-mini.jpg"
 
 ![Markdown All in One](./markdown-all-in-one.gif)
 
-リアルタイムでプレビューを見ることでレイアウトを瞬時に確認することができます。Markdown記法でのミスを減らす上では必須級の拡張機能です。
+リアルタイムでプレビューを見ることでレイアウトを瞬時に確認することができます。Markdown 記法でのミスを減らす上では必須級の拡張機能です。
 
 ### 目次の自動生成
 
@@ -42,9 +43,9 @@ Markdown Preview Enhanced では目次を自動で生成してくれる機能が
 1. マークダウンファイルを開いた状態で、コマンドパレット（F1 または Ctrl + Shift + P）を開き、「Markdown Preview Enhanced: Create TOC」を実行します。
 
 2. `<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->`が生成されるので、目次を表示したい箇所にそのコードを記述します
-(depthFrom=1 => h1タグは「目次」を表す。depthTo=6 => h6タグは「目次の見出し」)
+   (depthFrom=1 => h1 タグは「目次」を表す。depthTo=6 => h6 タグは「目次の見出し」)
 
-3. h1タグ、h6タグ(修正可能)を追加すれば自動で目次を生成します。また、目次に載せたくないタグに関しては {ignore = true} を設定することで追加しないようにすることもできます。`ex) ### HogeHoge {ignore=true}`
+3. h1 タグ、h6 タグ(修正可能)を追加すれば自動で目次を生成します。また、目次に載せたくないタグに関しては {ignore = true} を設定することで追加しないようにすることもできます。`ex) ### HogeHoge {ignore=true}`
 
 ## 2. Markdown All in One
 
@@ -85,8 +86,8 @@ Markdown Preview Enhanced では目次を自動で生成してくれる機能が
 
 ### 自動で構文チェック
 
-markdown記法に則って間違った記述を厳密に指摘してくれます。
-エンジニアにとってLinterは必需品です。ぜひ入れましょう。
+markdown 記法に則って間違った記述を厳密に指摘してくれます。
+エンジニアにとって Linter は必需品です。ぜひ入れましょう。
 
 これらの拡張機能を追加するだけで非常に快適に編集することができます。ぜひ試してみてください。
 
